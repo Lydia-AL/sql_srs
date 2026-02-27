@@ -12,7 +12,7 @@ con = duckdb.connect(database="data/exercises_sql_tables.duckdb", read_only=Fals
 # CROSS JOIN food_items
 # """
 
-#solution_df = duckdb.sql(ANSWER_STR).df()
+# solution_df = duckdb.sql(ANSWER_STR).df()
 
 with st.sidebar:
     theme = st.selectbox(
@@ -59,6 +59,6 @@ with tab2:
 #
 with tab3:
     exercise_name = exercise.loc[0, "exercise_name"]
-    with open(f"answers/{exercise_name}.sql.py", "r") as f:
+    with open(f"answers/{exercise_name}.sql", "r") as f:
         answer = f.read()
     st.write(answer)
