@@ -64,15 +64,17 @@ Sélectionner un thème dans la sidebar et commencer à réviser !
 
 Cliquer sur Reset pour réinitialiser les dates des exercices et recommencer le suivi.
 
-## Organisation du projet
+## Structure du projet
 
+```
 sql_srs/
-├─ app.py                  # Application principale Streamlit
-├─ init_db.py              # Script d'initialisation de la base de données
-├─ data/                   # Base de données DuckDB
-├─ answers/                # Fichiers SQL des réponses
+├─ app.py # Application principale Streamlit
+├─ init_db.py # Script d'initialisation de la base de données
+├─ data/ # Base de données DuckDB
+├─ answers/ # Fichiers SQL des réponses
 ├─ requirements.txt
 └─ README.md
+```
 
 ## Extensions possibles
 
